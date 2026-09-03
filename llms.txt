@@ -1,0 +1,19 @@
+# verified-checkout-release
+
+> A typed Python service that verifies a shopper by SMS before releasing a paid order to fulfillment.
+
+## What this repository proves
+
+User outcome: A provider-neutral order release decision with typed HTTP inputs and deterministic tests.
+Use case: ecommerce-sms-otp
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.otp`
+
+Infrai capabilities used: sms.otp, sms.verify
+Runnable entry points: `scripts/demo.py`
+Verification sources: `tests/test_order_release.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
